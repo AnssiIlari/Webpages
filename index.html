@@ -146,21 +146,37 @@
             var text = "";
             if (x == 0) {
                 text = mainpagecontent;
+                setActiveLink(x);
             } else if (x == 1) {
                 text = birthofagriculturecontent;
+                setActiveLink(x);
             } else if (x == 2) {
                 text = modernagriculturecontent;
+                setActiveLink(x);
             } else if (x == 3) {
                 text = futureofagriculturecontent;
+                setActiveLink(x);
             }
 
 
             document.getElementById("demo").innerHTML = text;
         }
 
+        // TESTING !!!!!!!!!
+        function setActiveLink(activeIndex) {
+            var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            navLinks.forEach((link, index) => {
+                if (index === activeIndex) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        }
+
         function LoadInitialContent() {
-		  document.getElementById("demo").innerHTML = mainpagecontent;
-		}
+            document.getElementById("demo").innerHTML = mainpagecontent;
+        }
 
         const mainpagecontent = "<p> Welcome to our exploration of agriculture, a journey through its origins, present challenges, and future possibilities. Discover the evolution of farming practices, how they've shaped our world, and the innovative solutions paving the way for a sustainable future.</p>";
 
