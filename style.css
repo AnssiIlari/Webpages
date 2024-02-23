@@ -15,3 +15,7 @@ p {
 .image-link img:hover {
     opacity: 0.7;
 }
+
+.container p {
+    padding: 0;
+}
