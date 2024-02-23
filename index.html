@@ -52,6 +52,11 @@
             <p>Contact details</p>
             <p>Anssi fakefarmer</p>
             <p>ask@farming.com</p>
+            <p>Continue learning: </p>
+
+            <a href="https://en.wikipedia.org/wiki/Agriculture" class="image-link">
+                <img src="DalleAGLink.webp" alt="Link to wikipedia">
+            </a>
         </div>
     </div>
 
@@ -97,13 +102,21 @@
         const mainpagecontent = `
 <div class="container">
   <p> Welcome to our exploration of agriculture, a journey through its origins, present challenges, and future possibilities. Discover the evolution of farming practices, how they've shaped our world, and the innovative solutions paving the way for a sustainable future.</p>
-  <img src="DalleAGMain.webp" class="img-fluid" alt="Image of a farm in sunrise">
+  <img src="DalleAGMain.webp" class="img-fluid mb-3" alt="Image of a farm in sunrise">
+  <p> Ipsum lipsum Ipsum lipsum Ipsum lipsum Ipsum lipsum Ipsum lipsum Ipsum lipsum Ipsum lipsum Ipsum lipsum Ipsum lipsum Ipsum lipsum Ipsum lipsum Ipsum lipsum .</p>
+  <div class="d-flex justify-content-center">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://upload.wikimedia.org/wikipedia/commons/transcoded/3/3d/Barley_field_Haukipudas_Oulu_20200816.webm/Barley_field_Haukipudas_Oulu_20200816.webm.720p.vp9.webm" allowfullscreen></iframe>
+      <p>Barley field in the wind</p>
+    </div>
+  </div>
   <div class="d-flex justify-content-end">
     <a href="#" onclick="textChange(1)" class="btn btn-primary">Next: Birth of Agriculture</a>
   </div>
+
 </div>
 `;
-const birthofagriculturecontent = `
+        const birthofagriculturecontent = `
 <div class="container">
   <p> Agriculture is the practice of cultivating plants and livestock. It has been the foundation of human civilization for thousands of years, providing food, clothing, and shelter. The birth of agriculture is a pivotal moment in human history, marking the transition from a nomadic hunter-gatherer lifestyle to a settled, agrarian society. This shift allowed for the development of complex social structures, the rise of cities, and the growth of civilizations. The birth of agriculture is a story of innovation, adaptation, and resilience, and it continues to shape our world today.</p>
   <img src="DALLEAGancient.webp" class="img-fluid" alt="Image of farming in ancient times">
@@ -113,7 +126,7 @@ const birthofagriculturecontent = `
   </div>
 </div>
 `;
-const modernagriculturecontent = `
+        const modernagriculturecontent = `
 <div class="container">
   <p> Modern agriculture is a complex, interconnected system that spans the globe. It encompasses a wide range of practices, technologies, and industries, all working together to produce the food, fiber, and fuel that sustain our world. From large-scale industrial farms to small family operations, modern agriculture is a diverse and dynamic field that is constantly evolving to meet the needs of a growing population. While modern agriculture has brought many benefits, it also faces significant challenges, including environmental degradation, resource depletion, and social inequality. The future of agriculture will depend on our ability to address these challenges and build a more sustainable, equitable food system.</p>
   <img src="DalleModernTractor.webp" class="img-fluid" alt="Image of a moden tractor">
@@ -124,7 +137,7 @@ const modernagriculturecontent = `
 </div>
 `;
 
-const futureofagriculturecontent = `
+        const futureofagriculturecontent = `
 <div class="container">
     <p> The future of agriculture is a topic of great importance and uncertainty. As the global population continues to grow, the demand for food, water, and energy will increase, putting pressure on agricultural systems and natural resources. At the same time, climate change, environmental degradation, and social inequality are posing new challenges to the sustainability and resilience of our food systems. The future of agriculture will require innovative solutions, new technologies, and a renewed focus on sustainability and equity. By working together, we can build a future where agriculture is not only productive and profitable, but also regenerative, resilient, and just.</p>
     <img src="DalleAG3Future.webp" class="img-fluid" alt="Vision of positive future in farming">
@@ -132,7 +145,7 @@ const futureofagriculturecontent = `
     <img src="DalleAGProblems.webp" class="img-fluid" alt="Vision of negative future in farming">
     <div class="d-flex justify-content-between">
         <a href="#" onclick="textChange(2)" class="btn btn-primary">Previous: Modern Agriculture</a>
-    </divz>
+    </div>
 </div>
 `;
 
