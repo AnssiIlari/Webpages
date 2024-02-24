@@ -19,3 +19,7 @@ p {
 .container p {
     padding: 0;
 }
+
+h1 {
+    padding: 30px 0;
+  }
